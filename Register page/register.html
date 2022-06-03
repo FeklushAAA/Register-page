@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!Ставим логотип>
+    <link rel="icon" href="/logo.png" type="image/png"/>
+    <meta charset="UTF-8">
+    <title>Форма регистрации</title>
+    <!Подключаем стиль CSS из файла styleReg>
+    <link rel="stylesheet" href="styleReg.css">
+</head>
+<body>
+    <main>
+        <img src="/logo.png" class="logoMain">
+        <div class="registerFormContainer"></div>
+            <h1 class="formTitle">
+                Регистрация
+            </h1>
+            <!Задаём класс контейнера для формы регистрации>
+            <div class="formFields">
+                <!Создаём форму для заполнения личной информации>
+                <div class="formSecondname" id="secondname">
+                    <input required type="text" placeholder="Фамилия">
+                </div>
+                <div class="formFirstname" id="firstname">
+                    <input required type="text" placeholder="Имя">
+                </div>
+                <div class="formSurname" id="surname">
+                    <input required type="text"  placeholder="Отчество">
+                </div>
+                <div class="formSexChecking" id="sexClass">
+                    <select id="sex" name="selectsex">
+                        <option value="" disabled selected>Выберите пол</option>
+                        <option value="male">Мужской</option>
+                        <option value="female">Женский</option>
+                    </select>
+                </div>
+                <div class="formDateOfBirthday" id="dateofbirthday">
+                    <input type="text" class="form-control" placeholder="Дата рождения" onfocus="(this.type='date')">
+                </div>
+                <div class="formAdressSelect" id="adressSelect">
+                    <select id="adress" name="selectadress">
+                        <option value="" disabled selected>Выберите свой адрес</option>
+                        <option value="firstAd">Ул. Пушкина</option>
+                        <option value="secondAd">Ул. Лермонтова</option>
+                        <option value="thirdAd">Ул. Булгакова</option>
+                        <option value="fourthAd">Ул. Гоголя</option>
+                        <option value="fifthAd">Ул. Толстого</option>
+                    </select>
+                </div>
+                <!Делаем кнопку>
+                <button class="regButton" type="submit">Регистрация</button>
+            </div>
+
+
+    </main>
+</body>
+</html>
